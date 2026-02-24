@@ -1,0 +1,278 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    Building Brands That
+                    <span>Connect & Grow</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We help businesses build powerful, authentic brands that connect with people and drive sales. 
+                    Your story is unique - let us tell it in a way that delivers real results.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'services' %}" class="btn-blue">Our Services</a>
+                    <a href="{% url 'contact' %}" class="btn-outline-blue">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Projects Done</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-5" style="background: var(--darker-bg);">
+    <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Why Choose Brandify?</h2>
+            <p class="section-subtitle">We combine local insights with global expertise</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Deep Local Insights</h3>
+                    <p>Clear understanding of your audience and the market you operate in, giving you a competitive edge.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Results-Driven</h3>
+                    <p>Focus on real, measurable outcomes like conversions, engagement, and sustainable growth.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Flexible Solutions</h3>
+                    <p>Tailored strategies for startups finding their feet or established brands looking to expand.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trusted Support</h3>
+                    <p>Dedicated team always ready to guide you, solve challenges, and help you scale with confidence.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Story Preview -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="position-relative">
+                    <img src="{% static 'core/images/brand/indexpic.png' %}" 
+                         alt="Brandify Story" 
+                         class="img-fluid rounded-3">
+                    <div class="position-absolute bottom-0 start-0 m-3">
+                        <span class="badge" style="background: var(--primary-blue); color: var(--darker-bg); padding: 0.5rem 1rem;">Since 2020</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <h2 class="section-title">Our Story</h2>
+                <p class="lead text-blue mb-3">From a small office in Dar es Salaam to helping businesses worldwide</p>
+                <p style="color: var(--text-gray);">
+                    Brandify started with a simple idea: every business deserves to tell its story. Today, we're a team of passionate experts dedicated to helping brands connect, grow, and thrive in the digital age.
+                </p>
+                <a href="{% url 'about' %}" class="service-link">Read Our Full Story <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <h2 class="section-title">Our Vision</h2>
+                <p class="lead text-blue mb-4">To digitize all businesses worldwide</p>
+                <p style="color: var(--text-gray);">We envision a world where you don't need to drive to the market to buy what you want. Receive your order wherever you are. For businesses, sell worldwide despite being located in one small town. Market expansion without boundaries.</p>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="lead text-blue mb-4">Making business easy for everyone</p>
+                <p style="color: var(--text-gray);">We solve core business problems: what product to sell, who to sell to, how to sell it, and assurance of getting customers. We make business accessible to anyone, anywhere.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-5" style="background: var(--darker-bg);">
+    <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for your brand</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Social media management, compelling content, and targeted paid advertising campaigns across Facebook, Google, and Instagram.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <p>Eye-catching posters, brochures, and website landing pages that turn visitors into customers.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Consultation & Training</h3>
+                    <p>Marketing strategy sessions and practical brand training for your staff to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{% url 'services' %}" class="btn-blue">View All Services <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Team Preview -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Passionate experts dedicated to your success</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/erick.png' %}" alt="Erick Paul" onerror="this.src='https://ui-avatars.com/api/?name=Erick+Paul&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Erick Paul</h3>
+                    <div class="role">Founder & CEO</div>
+                    <p>Visionary leader with passion for digital innovation</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/ernest.png' %}" alt="Ernest Mbwana" onerror="this.src='https://ui-avatars.com/api/?name=Erick+Paul&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Ernest Mbwana</h3>
+                    <div class="role">Creative Director</div>
+                    <p>Award-winning designer and brand strategist</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/steve.png' %}" alt="Steve Semhomba" onerror="this.src='https://ui-avatars.com/api/?name=Erick+Paul&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Steve Semhomba</h3>
+                    <div class="role">Marketing Head</div>
+                    <p>Digital marketing expert with 8+ years experience</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/lucy.png' %}" alt="Lucy Mgaya" onerror="this.src='https://ui-avatars.com/api/?name=Erick+Paul&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Lucy Mgaya</h3>
+                    <div class="role">Content Strategist</div>
+                    <p>Storytelling specialist creating brand narratives</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);">
+    <div class="container py-5 text-center">
+        <h2 class="display-4 fw-bold mb-4" data-aos="zoom-in">Ready to Grow Your Brand?</h2>
+        <p class="lead mb-4" style="color: white; opacity: 0.9;">Let's create something amazing together</p>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 rounded-pill" style="color: var(--primary-blue); font-weight: 600;" data-aos="zoom-in" data-aos-delay="200">
+            Start Your Journey <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </div>
+</section>
+{% endblock %}

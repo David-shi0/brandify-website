@@ -1,0 +1,104 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Team Hero -->
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h1 class="hero-title">
+                    Meet Our <span>Team</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Passionate, skilled, and creative experts dedicated to helping you build brands that connect and grow.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Members -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Erick Paul -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/erick.png' %}" 
+                             alt="Erick Paul"
+                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Erick+Paul&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Erick Paul</h3>
+                    <div class="role">Founder & CEO</div>
+                    <p>Visionary leader with passion for digital innovation. Erick founded Brandify with a mission to help businesses tell their unique stories.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ernest Mbwana -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/ernest.png' %}" 
+                             alt="Ernest Mbwana"
+                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Ernest+Mbwana&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Ernest Mbwana</h3>
+                    <div class="role">Creative Director</div>
+                    <p>Award-winning designer and brand strategist. Ernest has 10+ years of experience creating memorable brand identities.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Steve Semhomba -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/steve.png' %}" 
+                             alt="Steve Semhomba"
+                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Steve+Semhomba&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Steve Semhomba</h3>
+                    <div class="role">Marketing Head</div>
+                    <p>Digital marketing expert with 8+ years experience. Steve specializes in data-driven campaigns that deliver real results.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lucy Mgaya -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static 'core/images/team/lucy.png' %}" 
+                             alt="Lucy Mgaya"
+                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Lucy+Mgaya&background=38BDF8&color=fff&size=150'">
+                    </div>
+                    <h3>Lucy Mgaya</h3>
+                    <div class="role">Content Strategist</div>
+                    <p>Storytelling specialist creating brand narratives. Lucy crafts compelling content that connects with audiences emotionally.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

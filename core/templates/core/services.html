@@ -1,0 +1,95 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Services Hero -->
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h1 class="hero-title">
+                    Our <span>Services</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Comprehensive solutions designed to help businesses grow and stand out in competitive markets.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Digital Marketing -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="service-icon mb-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 class="section-title">Digital Marketing</h2>
+                <p class="lead text-blue">Maximize your online presence</p>
+                <ul class="list-unstyled" style="color: var(--text-gray);">
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Social media account management</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Compelling content creation (copywriting, visuals, videos)</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Targeted paid advertising on Facebook, Google, and Instagram</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Maximize reach and conversions</li>
+                </ul>
+                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <img src="{% static 'core/images/services/service001.png' %}" alt="Digital Marketing" class="img-fluid rounded" style="border: 2px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Creative Design -->
+<section class="py-5" style="background: var(--darker-bg);">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                <div class="service-icon mb-4">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h2 class="section-title">Creative Design</h2>
+                <p class="lead text-blue">Bring your brand to life</p>
+                <ul class="list-unstyled" style="color: var(--text-gray);">
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Eye-catching posters and brochures</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Marketing materials that stand out</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Website landing pages that convert</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Consistent brand identity across all platforms</li>
+                </ul>
+                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                <img src="{% static 'core/images/services/services002.png' %}" alt="Creative Design" class="img-fluid rounded" style="border: 2px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Consultation & Training -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="service-icon mb-4">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h2 class="section-title">Consultation & Training</h2>
+                <p class="lead text-blue">Empower your team</p>
+                <ul class="list-unstyled" style="color: var(--text-gray);">
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Marketing strategy sessions</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Practical brand training for your staff</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Ongoing support and guidance</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-blue me-2"></i> Customized solutions for your business</li>
+                </ul>
+                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <img src="{% static 'core/images/services/learn.png' %}" alt="Consultation" class="img-fluid rounded" style="border: 2px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

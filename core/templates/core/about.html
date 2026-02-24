@@ -1,0 +1,247 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- About Hero -->
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8" data-aos="fade-right">
+                <h1 class="hero-title">
+                    Our <span>Story</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Every great brand has a story. This is ours.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story - Timeline Style -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="story-image-wrapper">
+                    <img src="{% static 'core/images/story/head.png' %}" 
+                         alt="Brandify Office" 
+                         class="img-fluid rounded-3"
+                         style="border: 3px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+                    <div class="story-image-caption">
+                        <span class="badge bg-blue">Our Home</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <h2 class="section-title">How It All Began</h2>
+                <p class="lead text-blue mb-3">2020: The Birth of Brandify</p>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;">
+                    Brandify was born in a small office in Dar es Salaam with a big dream: to help businesses tell their unique stories. 
+                    Our founder, Erick Paul, saw that many local businesses had amazing products but struggled to connect with their audience.
+                </p>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;">
+                    With just a laptop and a vision, Erick started Brandify to bridge the gap between businesses and their customers through authentic storytelling and strategic marketing.
+                </p>
+                <div class="mt-4">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fas fa-quote-right" style="color: var(--primary-blue); font-size: 2rem;"></i>
+                        </div>
+                        <p class="mb-0 fst-italic" style="color: var(--text-light);">"Every brand has a story. We're here to tell it."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-row-reverse">
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="story-image-wrapper">
+                    <img src="{% static 'core/images/story/story.png' %}" 
+                         alt="Team Meeting" 
+                         class="img-fluid rounded-3"
+                         style="border: 3px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+                    <div class="story-image-caption">
+                        <span class="badge bg-blue">Our Team</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <h2 class="section-title">Growing Together</h2>
+                <p class="lead text-blue mb-3">2021-2022: Building Our Dream Team</p>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;">
+                    As word spread about our work, talented individuals joined our mission. Ernest brought creative vision, 
+                    Steve added marketing expertise, and Lucy crafted compelling stories. Together, we became a powerhouse of creativity.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="stat-box" style="background: rgba(56, 189, 248, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <h3 class="text-blue mb-0">10+</h3>
+                            <small style="color: var(--text-gray);">Happy Clients</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-box" style="background: rgba(56, 189, 248, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <h3 class="text-blue mb-0">4</h3>
+                            <small style="color: var(--text-gray);">Team Members</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="story-image-wrapper">
+                    <img src="{% static 'core/images/story/client.png' %}" 
+                         alt="Happy Clients" 
+                         class="img-fluid rounded-3"
+                         style="border: 3px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+                    <div class="story-image-caption">
+                        <span class="badge bg-blue">Our Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <h2 class="section-title">Making an Impact</h2>
+                <p class="lead text-blue mb-3">2023: Transforming Businesses</p>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;">
+                    From local startups to established brands, we've helped businesses across Tanzania find their voice 
+                    and connect with their audience. Our results-driven approach has delivered real growth for our clients.
+                </p>
+                <div class="client-logos mt-4">
+                    <div class="d-flex gap-3">
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--primary-blue); padding: 0.5rem 1rem;">TechStart</span>
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--primary-blue); padding: 0.5rem 1rem;">EcoFoods</span>
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--primary-blue); padding: 0.5rem 1rem;">FashionHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-row-reverse">  
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="story-image-wrapper">
+                    <img src="{% static 'core/images/story/smile.png' %}" 
+                         alt="Achievement" 
+                         class="img-fluid rounded-3" style="border: 3px solid var(--primary-blue); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);">
+                    <div class="story-image-caption">
+                        <span class="badge bg-blue">Achievements</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <h2 class="section-title">Today & Beyond</h2>
+                <p class="lead text-blue mb-3">2024: The Future is Bright</p>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;">
+                    Today, Brandify stands as a trusted partner for businesses seeking to grow their brand. 
+                    With our deep local insights and global perspective, we're ready to take on new challenges 
+                    and help even more businesses succeed in the digital age.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'contact' %}" class="btn-blue">Join Our Story <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-5" style="background: var(--darker-bg);">
+    <div class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Authenticity</h3>
+                    <p>We believe in genuine connections and honest communication.</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly evolve to bring fresh ideas to our clients.</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partnership</h3>
+                    <p>We succeed when our clients succeed.</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Results</h3>
+                    <p>We're committed to delivering measurable growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);">
+    <div class="container py-5 text-center">
+        <h2 class="display-4 fw-bold mb-4" data-aos="zoom-in">Be Part of Our Story</h2>
+        <p class="lead mb-4" style="color: white; opacity: 0.9;">Let's write the next chapter together</p>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 rounded-pill" style="color: var(--primary-blue); font-weight: 600;" data-aos="zoom-in" data-aos-delay="200">
+            Start Your Journey <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </div>
+</section>
+
+<style>
+.story-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.story-image-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.story-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.story-image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.badge.bg-blue {
+    background: var(--primary-blue);
+    color: var(--darker-bg);
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.stat-box {
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+}
+</style>
+{% endblock %}
