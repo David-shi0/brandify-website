@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cym-^!#4$*xkyx-$wsmw98m2n!@-!7tegcz&wi#n8^p6ze#d=n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brandify-website.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
