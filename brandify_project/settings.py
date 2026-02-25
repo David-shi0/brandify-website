@@ -126,6 +126,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'core/static'),
 ]
+
+# Add these lines if they don't exist
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -139,8 +143,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'shiodavid41@gmail.com'  # Your email
 EMAIL_HOST_PASSWORD = 'wsnk utoh ercm joxy'  # Use App Password, not regular password
 DEFAULT_FROM_EMAIL = 'Brandify <shiodavid41@@gmail.com>'
-
-# At the bottom of the file, add these lines:
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
