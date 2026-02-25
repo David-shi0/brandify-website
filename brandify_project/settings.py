@@ -121,15 +121,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
-# Add this line - it tells Django where to find your static files during development
+# Where Django looks for static files during development
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'core/static'),
 ]
 
-# Add these lines if they don't exist
+# IMPORTANT: STATIC_ROOT must come BEFORE STATICFILES_STORAGE
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# This setting uses WhiteNoise to serve static files
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Media files (user uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
