@@ -100,3 +100,11 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = 'none';
     }
 });
+// Mobile animation adjustments
+if (window.innerWidth < 768) {
+    AOS.init({
+        duration: 400,
+        once: true,
+        offset: 50
+    });
+}
