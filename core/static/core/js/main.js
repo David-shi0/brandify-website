@@ -53,17 +53,50 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Initialize AOS based on device
+if (window.innerWidth < 768) {
+    AOS.init({
+        duration: 400,
+        once: true,
+        offset: 20,
+        disable: false
+    });
+} else {
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        disable: false
+    });
+}
+
 // Close mobile menu when clicking a link
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
     
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth < 768) {
-                navbarToggler.click(); // Close the menu
+                navbarToggler.click();
             }
         });
     });
+});
+
+// Refresh AOS on resize
+window.addEventListener('resize', function() {
+    AOS.refresh();
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(56, 189, 248, 0.2)';
+    } else {
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.boxShadow = 'none';
+    }
 });
