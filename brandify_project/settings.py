@@ -121,15 +121,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
+# IMPORTANT: STATIC_ROOT must come BEFORE STATICFILES_STORAGE
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Where Django looks for static files during development
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'core/static'),
 ]
-
-# IMPORTANT: STATIC_ROOT must come BEFORE STATICFILES_STORAGE
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 # This setting uses WhiteNoise to serve static files
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: brandify-website
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn brandify_project.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
