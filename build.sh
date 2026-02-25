@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
-# Exit on error
 set -o errexit
 
-# Install dependencies
+echo "Installing dependencies..."
 pip install -r requirements.txt
 
-# Collect static files
-python manage.py collectstatic --no-input
+echo "Creating static directories..."
+mkdir -p staticfiles
+mkdir -p static
+mkdir -p core/static
 
-# Run migrations
-python manage.py migrate
+echo "Collecting static files..."
+python manage.py collectstatic --no-input --settings=render_settings
+
+echo "Running migrations..."
+python manage.py migrate --settings=render_settings
+
+echo "Build completed!"
